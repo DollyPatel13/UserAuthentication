@@ -29,7 +29,7 @@ class Controller {
                 throw err
             }
             else{
-                res.redirect('/home')
+                res.redirect('/')
             }
         })
     }
