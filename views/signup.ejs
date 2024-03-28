@@ -1,0 +1,21 @@
+<%-include('./partials/header.ejs')            %>
+<body>
+   <h3>Welcome to User Signup Page</h3>
+   <h3><%=myMsg %></h3>
+   <form action="/signup" method="post">
+    <div class="mb-3 col-sm-6">
+        <label for="uname" class="form-label">User Name</label>
+        <input type="text" class="form-control" id="uname" name="name">
+      </div>
+    <div class="mb-3 col-sm-6">
+      <label for="uemail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="uemail" name="email">
+    </div>
+    <div class="mb-3 col-sm-6">
+      <label for="upass" class="form-label">Password</label>
+      <input type="password" class="form-control" id="upass" name="pwd">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</body>
+</html>
